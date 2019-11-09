@@ -1,0 +1,141 @@
+.header {
+  width: 100%;
+  min-height: 100px;
+  background: #fff;
+}
+
+.header_container {
+  width: 80%;
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header_left {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header_logo-img {
+  padding-right: 15px;
+}
+
+.header_logo-link {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+  font-size: 24px;
+}
+
+.header_logo-link span {
+  color: #8d81ac;
+}
+
+.header_right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header_nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header_nav-list {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.header_nav-list a {
+  color: #635c73;
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 800;
+  transition: .2s;
+}
+
+.header_nav-list a:hover {
+  color: #474057;
+}
+
+.header_nav-list a:active {
+  color: #534C63;
+}
+
+.header-btn {
+  width: 145px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #8d81ac;
+  border-radius: 25px;
+  font-weight: 800;
+  transition: .2s;
+  margin-left: 10px;
+}
+
+.header-btn:hover {
+  background: #746893;
+}
+
+.header-btn:active {
+  background: #7C709B;
+}
+
+.header-menuOpen {
+  color: #333;
+  font-size: 20px;
+  transition: .2s;
+  margin-left: 15px;
+  display: none;
+}
+
+.header-menuOpen:hover {
+  color: #2C2C2C;
+}
+
+.header-menuOpen:active {
+  color: #3B3B3B;
+}
+
+@media(min-width: 320px) and (max-width: 1125px) {
+  .header_container {
+    width: 85%;
+  }
+  .header_nav-list {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 963px) {
+  .header_right {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header_left {
+    width: 100%;
+    justify-content: center;
+  }
+  .header_container {
+    flex-direction: column;
+  }
+  .header_logo {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .header_nav {
+    margin-bottom: 15px;
+  }
+}
