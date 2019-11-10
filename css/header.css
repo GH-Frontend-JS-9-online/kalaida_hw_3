@@ -30,6 +30,7 @@
   font-weight: 700;
   color: #333;
   font-size: 24px;
+  font-family: 'Lato', 'sans-serif';
 }
 
 .header_logo-link span {
@@ -57,7 +58,6 @@
 
 .header_nav-list a {
   color: #635c73;
-  font-family: 'Montserrat', 'sans-serif';
   font-weight: 800;
   transition: .2s;
 }
@@ -82,6 +82,7 @@
   font-weight: 800;
   transition: .2s;
   margin-left: 10px;
+  font-family: 'Lato', 'sans-serif';
 }
 
 .header-btn:hover {
@@ -141,7 +142,6 @@
 
 .openMenu_nav-list a{
   color: #fff;
-  font-family: 'Montserrat', 'sans-serif';
   font-size: 32px;
   padding-left: 33px;
   transition: .2s;
@@ -152,7 +152,6 @@
 }
 
 .openMenu-follow {
-  font-family: 'Montserrat', 'sans-serif';
   font-size: 32px;
   margin-left: 33px;
   color: rgba(255, 255, 255, .4);
