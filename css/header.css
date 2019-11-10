@@ -108,6 +108,76 @@
   color: #3B3B3B;
 }
 
+.openMenu {
+  width: 100%;
+  min-height: 600px;
+  display: none;
+  flex-direction: column;
+  background: #2E2E2E;
+  position: absolute;
+  top: 100px;
+}
+
+.openMenu.active {
+  display: flex;
+}
+
+.openMenu_nav {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.openMenu_nav-list {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  border-bottom: 1px solid rgba(244,244,244, .04);
+}
+
+.openMenu_nav-list a{
+  color: #fff;
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 32px;
+  padding-left: 33px;
+  transition: .2s;
+}
+
+.openMenu_nav-list a:hover {
+  color: #8d81ac;
+}
+
+.openMenu-follow {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 32px;
+  margin-left: 33px;
+  color: rgba(255, 255, 255, .4);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.openMenu_soc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.openMenu_soc-link {
+  color: #fff;
+  font-size: 56px;
+  margin-left: 24px;
+  margin-right: 24px;
+  transition: .2s;
+}
+
+.openMenu_soc-link:hover {
+  color: #8d81ac;
+}
+
 @media(min-width: 320px) and (max-width: 1125px) {
   .header_container {
     width: 85%;
@@ -118,7 +188,7 @@
   }
 }
 
-@media(min-width: 320px) and (max-width: 963px) {
+@media(min-width: 600px) and (max-width: 963px) {
   .header_right {
     width: 100%;
     justify-content: center;
@@ -137,5 +207,41 @@
   }
   .header_nav {
     margin-bottom: 15px;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 599px) {
+  .header_nav {
+    display: none;
+  }
+  .header-menuOpen {
+    display: block;
+  }
+  .header_left {
+    width: 50%;
+  }
+  .header_right {
+    width: 50%;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 370px) {
+  .header_container {
+    width: 95%;
+  }
+  .header_logo-img {
+    padding-right: 10px;
+  }
+  .header-menuOpen {
+    margin-left: 10px;
+  }
+}
+
+@media(min-width: 600px) and (max-width: 99999px) {
+  .openMenu {
+    display: none;
+  }
+  .openMenu.active {
+    display: none;
   }
 }
