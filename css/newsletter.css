@@ -1,0 +1,125 @@
+.newsletter {
+  width: 100%;
+  min-height: 135px;
+  background: #f4f4f4;
+}
+
+.newsletter_container {
+  width: 80%;
+  min-height: 135px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.newsletter_left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-text {
+  color: #635c73;
+  font-size: 30px;
+}
+
+.newsletter_right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.newsletter_form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.newsletter-input {
+  background-color: #ffffff;
+  width: 335px;
+  height: 42px;
+  color: #c8cbcf;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding-left: 30px;
+}
+
+.newsletter-input::placeholder {
+  color: #c8cbcf;
+}
+
+.newsletter-btn {
+  width: 140px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #8d81ac;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: .2s;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 20px;
+}
+
+.newsletter-btn:hover {
+  background: #7A6E99;
+}
+
+.newsletter-btn:active {
+  background: #887CA7;
+}
+
+@media(min-width: 1010px) and (max-width: 1249px) {
+  .newsletter_container {
+    width: 95%;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 1009px) {
+  .newsletter_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter_left {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .newsletter_right {
+    width: 100%;
+    justify-content: center;
+  }
+  .newsletter_form {
+    margin-bottom: 30px;
+  }
+  .newsletter_container {
+    width: 95%;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 529px) {
+  .newsletter_form {
+    flex-direction: column;
+  }
+  .newsletter-input {
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 360px) {
+  .newsletter-input {
+    width: 100%;
+  }
+}

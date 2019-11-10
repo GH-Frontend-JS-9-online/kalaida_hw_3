@@ -1,0 +1,167 @@
+.pricing {
+  width: 100%;
+  min-height: 900px;
+  background-image: url('../img/pricing-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -1px;
+}
+
+.pricing_container {
+  width: 80%;
+  min-height: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 48px;
+  color: #fff;
+  margin-top: 90px;
+  margin-bottom: 95px;
+}
+
+.pricing_posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 86px;
+}
+
+.pricing_post {
+  width: 260px;
+  min-height: 455px;
+  background: rgba(255, 255, 255, .11);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 7px;
+  margin-right: 7px;
+  transition: .2s;
+  margin-bottom: 14px;
+}
+
+.pricing_post:hover {
+  width: 300px;
+  min-height: 560px;
+  background: rgba(0, 0, 0, .11);
+}
+
+.pricing_post:hover .pricing_post_top{
+  background: rgba(0, 0, 0, .06);
+}
+
+.pricing_post_top {
+  background: rgba(255, 255, 255, .06);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.pricing_post-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pricing_post-price {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.pricing_post-time {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .3);
+  margin-top: 38px;
+}
+
+.pricing_post-line {
+  width: 60px;
+  height: 5px;
+  background: #8d81ac;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.pricing_post-dignity {
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.pricing_post-dignity2 {
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.pricing_post-dignity1 {
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 65px;
+}
+
+.pricing_post-btn {
+  width: 160px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, .15);
+  margin-bottom: 38px;
+  transition: .2s;
+}
+
+.pricing_post-btn:hover {
+  background: rgba(255, 255, 255, .1);
+}
+
+.pricing_post-btn:active {
+  background: rgba(255, 255, 255, .12);
+}
+
+.testimonials-text {
+  color: #a291a5;
+  opacity: .8;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 40px;
+}
+
+@media(min-width: 320px) and (max-width: 736px) {
+  .pricing_posts {
+    flex-direction: column;
+  }
+  .pricing_post {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 390px) {
+  .pricing_container {
+    width: 95%;
+  }
+  .pricing-title {
+    font-size: 36px;
+  }
+}
