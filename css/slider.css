@@ -160,6 +160,21 @@
   }
 }
 
+@media(min-width: 320px) and (max-width: 630px) {
+  .slideshow--item_author-name {
+    font-size: 20px;
+  }
+  .slideshow--item_author-text {
+    font-size: 14px;
+  }
+  .slideshow--item-text {
+    font-size: 16px;
+  }
+  .slideshow--item-time {
+    font-size: 14px;
+  }
+}
+
 @media(min-width: 320px) and (max-width: 567px) {
   .slideshow--item-text {
     font-size: 15px;

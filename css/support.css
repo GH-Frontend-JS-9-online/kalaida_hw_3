@@ -1,0 +1,152 @@
+.support {
+  width: 100%;
+  min-height: 700px;
+}
+
+.support_container {
+  width: 80%;
+  min-height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.support_block {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.support_block-title {
+  color: #d3d1da;
+  font-size: 28px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.support_block_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.support_block_content-headline {
+  width: 80%;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.support_block_content-text {
+  width: 80%;
+  line-height: 21px;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.support_left_content-headline {
+  color: #323232;
+}
+
+.support_left_content-text {
+  color: #848e97;
+  margin-bottom: 30px;
+}
+
+.support_left_content-text1 {
+  margin-bottom: 11px;
+}
+
+.support_center_content-headline {
+  color: #8d81ac;
+}
+
+.support_center_content-text {
+  color: #848e97;
+  margin-bottom: 30px;
+}
+
+.support_center_content-text2 {
+  margin-bottom: 10px;
+}
+
+.support_right_content-headline {
+  color: #8d81ac;
+  margin-bottom: 10px;
+}
+
+.support_right_content-text {
+  color: #848e97;
+  margin-bottom: 22px;
+}
+
+.support_block-btn {
+  height: 35px;
+  background: #f4f4f4;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #8d81ac;
+  font-size: 14px;
+  transition: .2s;
+  margin-bottom: 52px;
+}
+
+.support_block-btn:hover {
+  background: #E7E7E7;
+}
+
+.support_block-btn:active {
+  background: #EDEDED;
+}
+
+.support_block-btn1 {
+  width: 158px;
+}
+
+.support_block-btn2 {
+  width: 164px;
+}
+
+.support_block-btn3 {
+  width: 113px;
+}
+
+@media(min-width: 770px) and (max-width: 1200px) {
+  .support_container {
+    width: 95%;
+  }
+  .support_block_content-headline {
+    width: 90%;
+  }
+  .support_block_content-text {
+    width: 90%;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 769px) {
+  .support_container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .support_block {
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .support_block_content {
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
