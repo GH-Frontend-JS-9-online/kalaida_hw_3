@@ -48,9 +48,10 @@
 }
 
 .pricing_post:hover {
-  width: 300px;
-  min-height: 560px;
+  transform: scale(1.1, 1.05);
   background: rgba(0, 0, 0, .11);
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .pricing_post:hover .pricing_post_top{
@@ -152,6 +153,11 @@
     flex-direction: column;
   }
   .pricing_post {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .pricing_post:hover {
+    margin-bottom: 28px;
     margin-left: 0;
     margin-right: 0;
   }
